@@ -1,49 +1,8 @@
-# ==============================================================================
-# PROMPTS VISUELS POUR MOTEURS IA VIDÉO — Épisode 2
-# Format : 9:16 Vertical (1080x1920) | Style : Photoréaliste 8k, Éclairage Cinéma
-# ==============================================================================
+# Prompts IA Vidéo Google Flow / Kling AI / Runway — Le Piège Doré — L'Étal Saccagé et la Cage de Luxe
+Format : 9:16 Vertical (1080x1920) | Style : Photoréaliste 8k Abidjan Twilight Noir
 
-# SHOT 01 - HOOK : L'iPhone scellé et la carte en or
-Macro top-down shot of a brand new sealed white iPhone 16 Pro Max box on a scratched wooden African classroom desk, beside an embossed gold-foiled greeting card and white orchids, shallow depth of field, bright midday school classroom lighting, dramatic 9:16 vertical, photorealistic 8k.
+# SHOT 01 - HOOK : Un étal renversé... 300 000 Francs pour sauver une mère.
+Amina, stunning 17yo Ivorian high school girl, smooth dark ebony skin, neat cornrow braids, calm steel eyes, 9:16 vertical, photorealistic 8k
 
-# SHOT 02 - La mère souffrante à la maison
-Tender melancholic medium shot of Maman Helene, 48yo Ivorian mother in faded wax cloth pagne, sitting weak on wooden chair on humble porch, pressing hand against heart, pale pained expression, warm morning sunbeam through palm tree, 9:16 vertical cinema.
-
-# SHOT 03 - Les camarades de classe fascinées
-Medium shot inside lively West African high school classroom, group of teenage girls in school uniform looking with wide excited eyes at the luxury phone on desk, pointing and gossiping, dynamic handheld camera, 9:16 vertical.
-
-# SHOT 04 - POV : Lecture du chantage de S.K.
-First person POV shot holding thick cream paper card with elegant black cursive handwriting: 'Pour que tu répondes quand j'appelle. Je paie les soins de ta mère ce soir. - S.K.', golden initials shimmering under classroom light, 9:16 vertical.
-
-# SHOT 05 - Amina repousse le cadeau
-Close-up on Amina, 17yo Ivorian schoolgirl, smooth dark skin, cornrows, intense dignified eyes, calmly pushing the luxury phone box away with firm hand, resolute moral defiance, cold principled expression, 9:16 vertical cinema.
-
-# SHOT 06 - L'embuscade des motos de Zagba
-Low-angle dynamic shot outside high school gate, three motocross dirt bikes skidding aggressively onto dusty sidewalk, kicking up red amber dust in blazing sun, blocking pedestrian exit, 9:16 vertical.
-
-# SHOT 07 - Junior Zagba provocateur
-Junior Zagba, athletic 23yo Ivorian street leader, skin fade haircut with shaved line, reflective sunglasses, thick gold chain shining in bright sunlight, stepping off black motorcycle with arrogant smirk, crowd of students gathering in background, 9:16 vertical cinema.
-
-# SHOT 08 - Amina face au caïd
-Eye-level medium shot of Amina standing ground in her sky-blue uniform, clutching backpack straps, chin raised, refusing to flinch or back away, intense face-off, shallow depth of field, 9:16 vertical.
-
-# SHOT 09 - L'agression physique de Zagba
-Close-up of Junior Zagba's angry face losing composure, aggressively reaching out with gold-ringed hand to grab Amina's blue uniform sleeve, high drama, fast camera motion, 9:16.
-
-# SHOT 10 - La berline noire percute la moto
-Violent action shot, sleek black luxury sedan with dark tinted windows suddenly swerving onto the curb, bumper slamming into the front wheel of Zagba's motorcycle, sending the bike crashing onto pavement, dust flying, 9:16 vertical.
-
-# SHOT 11 - Les gardes du corps interviennent
-Two massive African bodyguards in sharp tailored dark suits and sunglasses swiftly stepping out of sedan, one muscular enforcer effortlessly shoving Zagba back against wall, authoritative dominance, 9:16 vertical cinema.
-
-# SHOT 12 - M. Koffi apparaît à la vitre
-Slow tracking shot as tinted rear car window glides down smoothly, Stephane Koffi, 45yo billionaire oligarch with graying beard in midnight blue embroidered bazin boubou, chilling serene gaze, expensive gold watch resting on car window ledge, 9:16 vertical.
-
-# SHOT 13 - L'invitation venimeuse
-Close-up of Stephane Koffi looking directly at Amina from the air-conditioned car shadows, calm predatory authority, open leather door waiting beside him, 9:16 vertical cinema.
-
-# SHOT 14 - Amina prise entre deux feux
-Medium three-way composition shot: Amina in center, to her left humiliated angry Zagba restrained by bodyguard, to her right open door of luxury black sedan inviting her in, moral crossroads, 9:16 vertical.
-
-# SHOT 15 - Le choix impossible (CLIFFHANGER)
-Intense extreme close-up on Amina's eyes, glistening with conflicted tears yet burning with fierce prayerful determination, hand trembling inches away from car handle, dramatic zoom-in, sudden cut to black, 9:16 vertical cinema.
+# SHOT FINAL - CLIFFHANGER : Le verrou automatique claque : Vous êtes chez moi maintenant.
+Dramatic cinematic zoom on Amina's resolute face, high tension thriller lighting, sudden cut to black, 9:16

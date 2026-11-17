@@ -1,54 +1,37 @@
 {
-  "project": "Gospel Microdrama Studio",
-  "version": "1.0.0",
+  "project": "AMINA : L'Autel De Yopougon — La Guerre Invisible",
+  "author": "Karl DIGRÉ",
+  "version": "2.0.0",
   "setting": "Yopougon, Abidjan (Côte d'Ivoire)",
+  "spiritual_theme": "La prière persistante (hupopiazo) basée sur les enseignements du pasteur Yvan Castanou — La persévérance sans relâche qui brise les forteresses de l'adversité et prive l'ennemi de tout repos.",
   "characters": [
     {
       "id": "char_amina",
       "name": "Amina",
       "age": 17,
-      "role": "Protagoniste / Héroïne chrétienne vertueuse",
-      "archetype": "The Righteous Underdog / The Unshakable Light",
-      "description": "Jeune lycéenne ivoirienne de 17 ans, beauté naturelle éclatante sans artifice, regard calme, déterminé et empreint de dignité. Teint noir ébène lumineux, cheveux tressés en nattes africaines soignées plaquées en arrière. Posture droite, démarche modeste mais fière.",
-      "signature_outfit": "Uniforme de lycée ivoirien bleu ciel impeccable (chemisette boutonnée bleu ciel clair repassée, jupe plissée bleu marine sobre sous les genoux), sac d'école en toile sombre serré contre son flanc.",
-      "personality": "Pieuse, studieuse, réservée, loyale envers sa mère malade, inébranlable face aux provocations de la rue et aux vanités matérielles.",
-      "visual_prompt_anchor": "Amina, stunning 17yo Ivorian West-African high school girl, smooth dark ebony skin, natural glow, neat neat cornrow braids pulled back, calm dignified eyes, wearing light-sky-blue buttoned school uniform shirt and navy blue skirt, holding dark backpack, cinematic 9:16 portrait, photorealistic 8k, warm sunset rim light",
+      "role": "Protagoniste / Lycéenne modèle et combattante spirituelle",
+      "archetype": "The Unshakable Light / The Persistent Praying Warrior",
+      "description": "Jeune lycéenne ivoirienne de 17 ans, beauté naturelle éclatante, regard pur, calme et d'une détermination d'acier. Teint noir ébène lumineux, nattes africaines soignées plaquées en arrière. Ne cède jamais à la peur ni au compromis.",
+      "signature_outfit": "Uniforme de lycée bleu ciel impeccable, sac de cours en bandoulière. En temps de crise nocturne : imperméable sombre sur sa tenue de maison modeste.",
+      "spiritual_weapon": "La Bible usée sur ses genoux, le Psaume 91, la prière continue en langues par l'Esprit (hupopiazo).",
+      "visual_prompt_anchor": "Amina, stunning 17yo Ivorian schoolgirl, smooth dark ebony skin, neat cornrow braids pulled back, calm dignified steel eyes, wearing pressed sky-blue school uniform shirt and navy skirt, holding backpack tight, cinematic 9:16 portrait, photorealistic 8k, sunset backlight",
       "voice_profile": {
         "engine": "edge-tts",
         "voice_id": "fr-FR-DeniseNeural",
         "pitch": "+0Hz",
         "rate": "+0%",
-        "tone": "Douce, posée, jeune, pure, empreinte de respect et de retenue"
-      }
-    },
-    {
-      "id": "char_zagba",
-      "name": "Junior 'Zagba'",
-      "age": 23,
-      "role": "Antagoniste local / Caïd de rue des maquis",
-      "archetype": "The Street Prince / The Arrogant Seducer",
-      "description": "Jeune homme ivoirien de 23 ans, athlétique, torse bombé, sourire narquois carnassier. Coupe de cheveux dégradé américain ultra-net avec trait rasé sur le côté, fine moustache taillée au millimètre. Regard prédateur habitué à ce que tout le monde lui cède.",
-      "signature_outfit": "Maillot de créateur streetwear éclatant, grosse chaîne en or brillant autour du cou, lunettes de soleil de marque relevées sur le front, montre dorée tape-à-l'œil.",
-      "personality": "Orgueilleux, matérialiste, habitué à la flatterie de son entourage, obsédé par l'ego et le regard des autres. Voit les femmes comme des trophées à acheter ou conquérir.",
-      "visual_prompt_anchor": "Junior Zagba, handsome 23yo Ivorian young man, athletic build, razor-sharp skin fade haircut with shaved line, thin trimmed mustache, confident arrogant predator smirk, wearing luxury streetwear jersey, flashy chunky gold chain necklace, designer sunglasses pushed up on forehead, standing outside lively Yopougon maquis bar with red plastic crates, neon backlight, 9:16 vertical cinema, 8k",
-      "voice_profile": {
-        "engine": "edge-tts",
-        "voice_id": "fr-FR-HenriNeural",
-        "pitch": "-2Hz",
-        "rate": "+5%",
-        "tone": "Rauque, insolent, arrogant, débit dynamique d'Abidjan, teinté d'assurance narquoise"
+        "tone": "Douce, posée, pure, ferme, empreinte d'une autorité spirituelle tranquille"
       }
     },
     {
       "id": "char_koffi",
       "name": "M. Stéphane Koffi",
       "age": 45,
-      "role": "Antagoniste d'influence / Le Prédateur de l'ombre",
-      "archetype": "The Powerful Oligarch / The Shadow Seducer",
-      "description": "Homme d'affaires ivoirien puissant de 45 ans, carrure imposante, visage fermé, regard perçant, froid et calculateur. Cheveux courts grisonnants sur les tempes, barbe courte taillée avec soin. Dégage une autorité absolue et glaciale.",
-      "signature_outfit": "Boubou traditionnel somptueux en bazin brodé bleu nuit et or, montre en or massif au poignet, chevalière ornée.",
-      "personality": "Manipulateur patient, cynique, persuadé que chaque individu a un prix ou une faille exploitable. Ne s'emporte jamais, agit avec une cruauté méthodique et feutrée.",
-      "visual_prompt_anchor": "Stephane Koffi, imposing 45yo West African businessman, graying temples, short manicured beard, cold calculating predatory expression, dressed in luxurious embroidered midnight blue and gold bazin boubou, heavy gold luxury watch, sitting in the shadows of the backseat of a tinted luxury black sedan, glowing smartphone screen reflection, dramatic cinematic chiaroscuro lighting, 9:16 vertical, photorealistic 8k",
+      "role": "Antagoniste principal / Homme d'affaires corrupteur et prédateur",
+      "archetype": "The Corrupt Oligarch / The Shadow Hunter",
+      "description": "Homme d'affaires ivoirien influent de 45 ans, carrure imposante, regard perçant, froid et calculateur. Cheveux grisonnants sur les tempes, barbe courte soignée. Habitué à acheter ou briser tout ce qui lui résiste.",
+      "signature_outfit": "Boubou somptueux en bazin brodé bleu nuit et or ou costume sur mesure de haute couture, montre en or massif au poignet, verre de whisky à la main dans sa villa ultra-sécurisée.",
+      "visual_prompt_anchor": "Stephane Koffi, imposing 45yo West African billionaire businessman, graying temples, manicured beard, cold calculating predatory expression, dressed in luxurious embroidered midnight blue and gold bazin boubou, heavy gold luxury watch, dim luxury modern mansion, 9:16 vertical, photorealistic 8k",
       "voice_profile": {
         "engine": "edge-tts",
         "voice_id": "fr-FR-AlainNeural",
@@ -58,57 +41,88 @@
       }
     },
     {
+      "id": "char_zagba",
+      "name": "Junior 'Zagba'",
+      "age": 23,
+      "role": "Antagoniste de rue / Caïd des maquis de Yopougon",
+      "archetype": "The Street Prince / The Arrogant Seducer",
+      "description": "Jeune homme ivoirien de 23 ans régnant sur le carrefour Siporex et la Rue Princesse. Coupe dégradée au millimètre, maillot de marque, torse bombé, chaîne en or étincelante et lunettes sur le front.",
+      "signature_outfit": "Maillot de sport streetwear de luxe, grosse chaîne dorée, moto de cross noire et verte.",
+      "visual_prompt_anchor": "Junior Zagba, athletic 23yo Ivorian street boss, razor-sharp skin fade haircut, thin mustache, arrogant predator smirk, wearing luxury colorful streetwear jersey, heavy chunky gold chain, designer sunglasses on forehead, outside lively Yopougon maquis bar with red crates, neon light, 9:16",
+      "voice_profile": {
+        "engine": "edge-tts",
+        "voice_id": "fr-FR-HenriNeural",
+        "pitch": "-2Hz",
+        "rate": "+5%",
+        "tone": "Rauque, provocateur, insolent, débit rapide de Yopougon"
+      }
+    },
+    {
       "id": "char_helene",
       "name": "Maman Hélène",
       "age": 48,
-      "role": "Figure maternelle / La Gardienne de la foi",
-      "archetype": "The Praying Mother / Spiritual Foundation",
-      "description": "Femme ivoirienne de 48 ans, visage marqué par les épreuves et le travail harassant du marché de Yopougon, mais illuminé par une profonde paix intérieure et une foi inaltérable. Yeux fatigués mais chaleureux et bienveillants.",
-      "signature_outfit": "Pagne africain traditionnel aux motifs chauds (wax orange et marron), foulard assorti noué sur la tête, tablier usé de marchande.",
-      "personality": "Prière constante, générosité, amour inconditionnel pour sa fille, santé cardiaque fragile mais force spirituelle de roc.",
-      "visual_prompt_anchor": "Maman Helene, 48yo Ivorian mother, gentle weary weathered kind face, warm loving eyes, wearing traditional wax cloth pagne and matching headwrap, sitting on small wooden stool on humble porch, sorting fresh red peppers in wooden calabash bowl, warm lantern light, humble courtyard in Abidjan, 9:16 vertical cinema, 8k",
+      "role": "Mère d'Amina / Croyante dévouée et commerçante du marché",
+      "archetype": "The Praying Mother / Spiritual Matriarch",
+      "description": "Femme ivoirienne de 48 ans, visage marqué par le travail acharné au marché de Yopougon, bienveillance protectrice, cœur fragile soumis aux crises mais foi inébranlable.",
+      "signature_outfit": "Pagne africain traditionnel wax aux motifs chauds, foulard noué assorti.",
+      "visual_prompt_anchor": "Maman Helene, 48yo Ivorian mother, kind weathered loving face, wearing traditional wax cloth pagne and headwrap, sitting on wooden stool sorting peppers or lying peacefully in hospital bed, warm lantern lighting, 9:16 vertical cinema",
       "voice_profile": {
         "engine": "edge-tts",
         "voice_id": "fr-FR-VivienneMultilingualNeural",
         "pitch": "-2Hz",
         "rate": "-3%",
-        "tone": "Douce, maternelle, apaisante, chaleureuse, teintée de prière et de grâce"
+        "tone": "Douce, maternelle, apaisante, chaleureuse"
       }
     },
     {
-      "id": "char_acolyte",
-      "name": "L'Acolyte du Maquis (Bahi)",
-      "age": 22,
-      "role": "Suiveur / Amplificateur de tension",
-      "archetype": "The Street Sycophant",
-      "description": "Jeune du quartier, t-shirt sans manche, casquette de travers, bouteille de bière à la main, admirateur servile de Zagba.",
-      "signature_outfit": "Débardeur blanc, jean déchiré, claquettes de marque.",
-      "personality": "Provocateur, moqueur, cherche l'approbation de Zagba.",
-      "visual_prompt_anchor": "Young 22yo African street fellow, sleeveless shirt, laughing and pointing, drinking beer, standing beside red crates outside bar, neon reflection, 9:16",
+      "id": "char_sarah",
+      "name": "Sarah",
+      "age": 17,
+      "role": "Camarade d'Amina / La Voix du Compromis",
+      "archetype": "The Fearful Conformist",
+      "description": "Jeune lycéenne de 17 ans, amie d'enfance d'Amina mais facilement impressionnée par l'argent et terrifiée par les puissants. Pousse Amina à négocier et à céder à M. Koffi.",
+      "signature_outfit": "Uniforme de lycée bleu ciel, bijoux fantaisie, téléphone portable constamment à la main.",
+      "visual_prompt_anchor": "Sarah, 17yo Ivorian high school girl, school uniform, anxious conflicted expression, holding smartphone, classroom background, 9:16 vertical",
+      "voice_profile": {
+        "engine": "edge-tts",
+        "voice_id": "fr-FR-EloiseNeural",
+        "pitch": "+1Hz",
+        "rate": "+5%",
+        "tone": "Nerveuse, excitée, suppliante, apeurée"
+      }
+    },
+    {
+      "id": "char_kevin",
+      "name": "Kévin",
+      "age": 10,
+      "role": "Petit frère d'Amina",
+      "archetype": "The Innocent Vulnerability",
+      "description": "Garçonnet de 10 ans, élève du primaire, yeux innocents et effrayés lorsqu'il est menacé dans la rue par les hommes de Koffi.",
+      "signature_outfit": "Uniforme d'écolier kaki, cartable usé sur le dos.",
+      "visual_prompt_anchor": "Kevin, 10yo cute African schoolboy in khaki school uniform, tearful frightened eyes, holding old backpack, dusty street corner in Abidjan, 9:16 vertical",
+      "voice_profile": {
+        "engine": "edge-tts",
+        "voice_id": "fr-FR-DeniseNeural",
+        "pitch": "+4Hz",
+        "rate": "+0%",
+        "tone": "Enfantin, apeuré, sanglotant"
+      }
+    },
+    {
+      "id": "char_proprietaire",
+      "name": "Le Propriétaire Véreux",
+      "age": 52,
+      "role": "Instrument de l'asphyxie financière",
+      "archetype": "The Bought Pawn",
+      "description": "Homme corpulent d'une cinquantaine d'années, lunettes épaisses, l'air cupide, transformé par l'argent de Koffi pour expulser la famille en 48 heures.",
+      "signature_outfit": "Chemise à manches courtes froissée, liasse de papiers officiels à la main.",
+      "visual_prompt_anchor": "Corrupt 52yo heavy African landlord waving eviction papers aggressively, shouting outside humble courtyard gate, 9:16 vertical",
       "voice_profile": {
         "engine": "edge-tts",
         "voice_id": "fr-FR-ClaudeNeural",
-        "pitch": "+2Hz",
-        "rate": "+8%",
-        "tone": "Moqueur, familier, rapide"
-      }
-    },
-    {
-      "id": "char_chauffeur",
-      "name": "Le Chauffeur / Homme de main",
-      "age": 38,
-      "role": "Exécutant discret",
-      "archetype": "The Silent Enforcer",
-      "description": "Homme râblé aux épaules carrées, costume sombre discret, regard dans le rétroviseur central, discipliné et mutique.",
-      "signature_outfit": "Costume noir sombre sans cravate, chemise blanche col ouvert.",
-      "personality": "Obéissant, silencieux, efficace.",
-      "visual_prompt_anchor": "Muscular 38yo African driver in dark suit, hands on leather steering wheel of luxury black car, rearview mirror reflection, focused expression, 9:16",
-      "voice_profile": {
-        "engine": "edge-tts",
-        "voice_id": "fr-FR-JeromeNeural",
-        "pitch": "-3Hz",
-        "rate": "-2%",
-        "tone": "Militaire, sobre, laconique"
+        "pitch": "-2Hz",
+        "rate": "+4%",
+        "tone": "Agressif, hautain, sans pitié"
       }
     }
   ]

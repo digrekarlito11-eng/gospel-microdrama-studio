@@ -1,58 +1,8 @@
-# ==============================================================================
-# PROMPTS VISUELS POUR MOTEURS IA VIDÉO (Google Flow, Kling, Runway Gen-3, Midjourney)
-# Format : 9:16 Vertical (1080x1920) | Style : Photoréaliste 8k, Éclairage Cinéma
-# ==============================================================================
+# Prompts IA Vidéo Google Flow / Kling AI / Runway — L'Ombre du Maquis — Le Pari et la Traque
+Format : 9:16 Vertical (1080x1920) | Style : Photoréaliste 8k Abidjan Twilight Noir
 
-# SHOT 01 - HOOK : Mains tremblantes et enveloppe
-Extreme close-up macro shot, trembling hands of a 17yo West-African girl holding a rough brown kraft envelope in a dim room, slowly tearing the top edge, glimpse of a glossy photo edge inside, dim incandescent light bulb lighting, dust motes, cinematic 9:16 vertical aspect ratio, hyper-realistic 8k, high tension thriller tone.
+# SHOT 01 - HOOK : À Yopougon, quand la nuit tombe, deux prédateurs fixent son prix.
+Amina, stunning 17yo Ivorian high school girl, smooth dark ebony skin, neat cornrow braids, calm steel eyes, 9:16 vertical, photorealistic 8k
 
-# SHOT 02 - Décor Yopougon au Crépuscule
-Cinematic wide establishing shot of vibrant bustling street in Yopougon Abidjan at golden hour twilight, amber dusty sunlight, yellow and blue minibuses (gbakas), street vendors with fried plantain, outdoor bars (maquis) turning on red and orange neon signs, lively African urban evening atmosphere, 9:16 vertical, photorealistic, anamorphic lens flare.
-
-# SHOT 03 - Amina marchant avec dignité
-Amina, stunning 17yo Ivorian high school girl, smooth dark ebony skin, neat cornrow braids pulled back, calm serene eyes, wearing pressed sky-blue uniform shirt and dark navy skirt, holding backpack tight against her side, walking gracefully through crowded dusty African street, golden sunset backlight outlining her silhouette, slow motion 0.85x, cinematic 9:16, 8k.
-
-# SHOT 04 - Junior Zagba au Maquis Le VIP
-Low angle shot of Junior Zagba, arrogant 23yo Ivorian street boss, athletic build, razor sharp skin fade haircut, thin mustache, sitting backwards on a red plastic beer crate outside bustling open-air bar, wearing luxury colorful streetwear jersey, heavy shiny gold chain around neck, designer sunglasses on forehead, smirking, red neon glow in background, 9:16 vertical cinema.
-
-# SHOT 05 - L'acolyte moqueur (Bahi)
-Medium shot of a 22yo West-African young man in sleeveless shirt and tilted cap, laughing mockingly with a beer bottle in hand, pointing playfully toward the passing girl, lively colorful bar patio with plastic tables, candid motion, 9:16 vertical framing.
-
-# SHOT 06 - Zagba annonce le pari
-Close-up on Junior Zagba's face, his predator smirk turning serious and cold, wounded pride in dark eyes, biting lower lip, adjusting his flashy jersey collar, intense determination, dynamic side lighting with warm street lamp and cold blue bar neon, 9:16 vertical, cinematic drama.
-
-# SHOT 07 - Zagba regardant Amina s'éloigner
-Over-the-shoulder shot from behind Zagba, looking at Amina's blue uniform silhouette walking away in the bustling distance under flickering market lights, dark dusty street, high contrast, 9:16 vertical cinema.
-
-# SHOT 08 - La berline noire dans l'obscurité
-Side profile shot of a luxury gleaming black sedan parked in a shadowy alley 50 meters away, engine idling with faint exhaust vapor, deep dark tinted privacy glass windows, cold reflections of passing city lights on the polished black paint, ominous surveillance mood, 9:16 vertical composition.
-
-# SHOT 09 - M. Stéphane Koffi dans l'habitacle
-Chiaroscuro interior car shot, Stephane Koffi, imposing 45yo African businessman, silver-flecked temples, manicured short beard, cold calculating expression, dressed in sumptuous embroidered midnight blue and gold bazin boubou, glowing smartphone screen in hand casting cool light on his face, looking out the tinted window, 9:16 vertical, hyper-realistic 8k.
-
-# SHOT 10 - Koffi parlant froidement
-Tight close-up of M. Koffi's face, cold piercing eyes, slight authoritative movement of lips as he speaks without raising voice, massive gold luxury watch on his wrist resting against car leather armrest, high luxury contrasting with the street outside, 9:16 vertical cinema.
-
-# SHOT 11 - Le chauffeur dans le rétroviseur
-Medium close-up focusing on the car's interior rearview mirror, sharp focused eyes of a muscular 38yo chauffeur in dark suit, hands on black leather steering wheel, slight nod of disciplined compliance, blurred street lights behind through rear window, 9:16 vertical.
-
-# SHOT 12 - Sourire sans chaleur de Koffi
-Macro close-up on Stephane Koffi's slow sinister smile forming across his lips, sinister calm arrogance of a billionaire hunter, cold ambient lighting, dark cinematic thriller atmosphere, 9:16 vertical.
-
-# SHOT 13 - La cour familiale d'Amina
-Medium shot of Amina pushing open a squeaky corrugated iron gate, stepping into a peaceful humble courtyard, warm fire smoke rising from firewood stove, terracotta pots, peaceful contrast with the noisy street, soft warm twilight, 9:16 vertical.
-
-# SHOT 14 - Maman Hélène et Amina
-Tender two-shot, Maman Helene, gentle 48yo Ivorian mother in traditional wax pagne, sitting on low wooden stool sorting red chili peppers in a calabash bowl, smiling with loving grace as Amina gently kisses her forehead, warm domestic peace, 9:16 vertical cinematic.
-
-# SHOT 15 - L'enveloppe sous la porte
-Top-down high angle shot looking at bare concrete floor outside bedroom door, Amina's hand inserting iron key into padlock, suddenly stopping as camera reveals a thick brown kraft envelope slipped under the wooden door, tension shadow, 9:16 vertical.
-
-# SHOT 16 - Amina ramasse l'enveloppe
-Medium shot, Amina looking left and right nervously in the dim courtyard, bending down swiftly to pick up the mysterious brown envelope, clutching it to her chest, slipping inside her room, 9:16 vertical.
-
-# SHOT 17 - Révélation de la photo volée
-First person POV shot in dim bedroom under single yellow hanging bulb, hands opening the torn envelope, sliding out a glossy 4x6 photograph showing Amina from the side walking in front of the bar 10 minutes ago, crisp telephoto shot taken from inside a vehicle, 9:16 vertical hyper-detailed.
-
-# SHOT 18 - Le message de menace (CLIFFHANGER)
-Close-up shot of the back of the white photo paper, handwritten aggressive bold black capital letters reading: 'TU N'AS NULLE PART OÙ TE CACHER. BIENTÔT, TU SERAS À MOI.', dramatic camera push-in zoom into the text then quick tilt-up to Amina's terrified wide eyes, sudden cut to black, 9:16 vertical cinema.
+# SHOT FINAL - CLIFFHANGER : TU N'AS NULLE PART OÙ TE CACHER. BIENTÔT, TU SERAS À MOI.
+Dramatic cinematic zoom on Amina's resolute face, high tension thriller lighting, sudden cut to black, 9:16

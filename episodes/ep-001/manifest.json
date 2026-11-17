@@ -5,30 +5,138 @@
   "resolution": "1080x1920",
   "total_shots": 18,
   "estimated_duration_seconds": 75,
+  "hook": "À Yopougon, quand la nuit tombe, deux prédateurs fixent son prix.",
+  "cliffhanger": "TU N'AS NULLE PART OÙ TE CACHER. BIENTÔT, TU SERAS À MOI.",
   "shots": [
-    {"shot_id": "shot_01", "duration": 4.0, "type": "hook_macro", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_01.mp4"},
-    {"shot_id": "shot_02", "duration": 4.0, "type": "wide_establishing", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_02.mp4"},
-    {"shot_id": "shot_03", "duration": 5.0, "type": "character_tracking", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_03.mp4"},
-    {"shot_id": "shot_04", "duration": 5.0, "type": "character_medium", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_04.mp4"},
-    {"shot_id": "shot_05", "duration": 4.0, "type": "dialogue_reaction", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_05.mp4"},
-    {"shot_id": "shot_06", "duration": 6.0, "type": "dialogue_closeup", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_06.mp4"},
-    {"shot_id": "shot_07", "duration": 5.0, "type": "over_the_shoulder", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_07.mp4"},
-    {"shot_id": "shot_08", "duration": 4.0, "type": "surveillance_car", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_08.mp4"},
-    {"shot_id": "shot_09", "duration": 6.0, "type": "car_interior", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_09.mp4"},
-    {"shot_id": "shot_10", "duration": 5.0, "type": "dialogue_koffi", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_10.mp4"},
-    {"shot_id": "shot_11", "duration": 5.0, "type": "mirror_driver", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_11.mp4"},
-    {"shot_id": "shot_12", "duration": 5.0, "type": "dialogue_koffi_smile", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_12.mp4"},
-    {"shot_id": "shot_13", "duration": 5.0, "type": "courtyard_gate", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_13.mp4"},
-    {"shot_id": "shot_14", "duration": 5.0, "type": "mother_two_shot", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_14.mp4"},
-    {"shot_id": "shot_15", "duration": 5.0, "type": "envelope_floor", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_15.mp4"},
-    {"shot_id": "shot_16", "duration": 5.0, "type": "pick_envelope", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_16.mp4"},
-    {"shot_id": "shot_17", "duration": 6.0, "type": "photo_reveal", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_17.mp4"},
-    {"shot_id": "shot_18", "duration": 6.0, "type": "cliffhanger_threat", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-001/clips/shot_18.mp4"}
+    {
+      "shot_id": "shot_01",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_01.mp4"
+    },
+    {
+      "shot_id": "shot_02",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_02.mp4"
+    },
+    {
+      "shot_id": "shot_03",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_03.mp4"
+    },
+    {
+      "shot_id": "shot_04",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_04.mp4"
+    },
+    {
+      "shot_id": "shot_05",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_05.mp4"
+    },
+    {
+      "shot_id": "shot_06",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_06.mp4"
+    },
+    {
+      "shot_id": "shot_07",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_07.mp4"
+    },
+    {
+      "shot_id": "shot_08",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_08.mp4"
+    },
+    {
+      "shot_id": "shot_09",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_09.mp4"
+    },
+    {
+      "shot_id": "shot_10",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_10.mp4"
+    },
+    {
+      "shot_id": "shot_11",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_11.mp4"
+    },
+    {
+      "shot_id": "shot_12",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_12.mp4"
+    },
+    {
+      "shot_id": "shot_13",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_13.mp4"
+    },
+    {
+      "shot_id": "shot_14",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_14.mp4"
+    },
+    {
+      "shot_id": "shot_15",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_15.mp4"
+    },
+    {
+      "shot_id": "shot_16",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_16.mp4"
+    },
+    {
+      "shot_id": "shot_17",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_17.mp4"
+    },
+    {
+      "shot_id": "shot_18",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-001/clips/shot_18.mp4"
+    }
   ],
   "audio_tracks": {
     "voiceover": "episodes/ep-001/audio/voiceover.mp3",
-    "bgm_coupe_decale": "episodes/ep-001/audio/bgm_street.mp3",
-    "bgm_suspense": "episodes/ep-001/audio/bgm_suspense.mp3",
     "bgm_gospel": "episodes/ep-001/audio/bgm_gospel.mp3"
   },
   "subtitles": "episodes/ep-001/subtitles.srt"

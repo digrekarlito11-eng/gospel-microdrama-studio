@@ -1,32 +1,122 @@
 {
   "episode_id": "ep-002",
-  "title": "L'Ombre du Maquis — Le Cadeau Empoisonné et les Deux Loups",
+  "title": "Le Piège Doré — L'Étal Saccagé et la Cage de Luxe",
   "aspect_ratio": "9:16",
   "resolution": "1080x1920",
   "total_shots": 15,
   "estimated_duration_seconds": 75,
+  "hook": "Un étal renversé... 300 000 Francs pour sauver une mère.",
+  "cliffhanger": "Le verrou automatique claque : Vous êtes chez moi maintenant.",
   "shots": [
-    {"shot_id": "shot_01", "duration": 4.0, "type": "hook_macro", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_01.mp4"},
-    {"shot_id": "shot_02", "duration": 5.0, "type": "mother_sick", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_02.mp4"},
-    {"shot_id": "shot_03", "duration": 6.0, "type": "classroom_girls", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_03.mp4"},
-    {"shot_id": "shot_04", "duration": 5.0, "type": "card_reading", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_04.mp4"},
-    {"shot_id": "shot_05", "duration": 5.0, "type": "refusal_defiance", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_05.mp4"},
-    {"shot_id": "shot_06", "duration": 5.0, "type": "motorcycle_ambush", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_06.mp4"},
-    {"shot_id": "shot_07", "duration": 6.0, "type": "zagba_arrogance", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_07.mp4"},
-    {"shot_id": "shot_08", "duration": 6.0, "type": "amina_standoff", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_08.mp4"},
-    {"shot_id": "shot_09", "duration": 6.0, "type": "zagba_grab", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_09.mp4"},
-    {"shot_id": "shot_10", "duration": 5.0, "type": "car_crash_action", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_10.mp4"},
-    {"shot_id": "shot_11", "duration": 5.0, "type": "bodyguards_shove", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_11.mp4"},
-    {"shot_id": "shot_12", "duration": 6.0, "type": "koffi_window_reveal", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_12.mp4"},
-    {"shot_id": "shot_13", "duration": 6.0, "type": "koffi_dialogue_offer", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_13.mp4"},
-    {"shot_id": "shot_14", "duration": 5.0, "type": "three_way_tension", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_14.mp4"},
-    {"shot_id": "shot_15", "duration": 5.0, "type": "cliffhanger_door_choice", "status": "pending_upload", "storage_url": null, "local_path": "episodes/ep-002/clips/shot_15.mp4"}
+    {
+      "shot_id": "shot_01",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_01.mp4"
+    },
+    {
+      "shot_id": "shot_02",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_02.mp4"
+    },
+    {
+      "shot_id": "shot_03",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_03.mp4"
+    },
+    {
+      "shot_id": "shot_04",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_04.mp4"
+    },
+    {
+      "shot_id": "shot_05",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_05.mp4"
+    },
+    {
+      "shot_id": "shot_06",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_06.mp4"
+    },
+    {
+      "shot_id": "shot_07",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_07.mp4"
+    },
+    {
+      "shot_id": "shot_08",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_08.mp4"
+    },
+    {
+      "shot_id": "shot_09",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_09.mp4"
+    },
+    {
+      "shot_id": "shot_10",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_10.mp4"
+    },
+    {
+      "shot_id": "shot_11",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_11.mp4"
+    },
+    {
+      "shot_id": "shot_12",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_12.mp4"
+    },
+    {
+      "shot_id": "shot_13",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_13.mp4"
+    },
+    {
+      "shot_id": "shot_14",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_14.mp4"
+    },
+    {
+      "shot_id": "shot_15",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-002/clips/shot_15.mp4"
+    }
   ],
   "audio_tracks": {
     "voiceover": "episodes/ep-002/audio/voiceover.mp3",
-    "bgm_drama": "episodes/ep-002/audio/bgm_drama.mp3",
-    "bgm_drill": "episodes/ep-002/audio/bgm_drill.mp3",
-    "bgm_climax": "episodes/ep-002/audio/bgm_climax.mp3"
+    "bgm_gospel": "episodes/ep-002/audio/bgm_gospel.mp3"
   },
   "subtitles": "episodes/ep-002/subtitles.srt"
 }

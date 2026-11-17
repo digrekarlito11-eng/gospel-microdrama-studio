@@ -1,0 +1,129 @@
+{
+  "episode_id": "ep-005",
+  "title": "Le Sanctuaire de la Victoire — L'Autel de Prière Persistante",
+  "aspect_ratio": "9:16",
+  "resolution": "1080x1920",
+  "total_shots": 16,
+  "estimated_duration_seconds": 75,
+  "hook": "Le moniteur cardiaque affiche une ligne critique... Les médecins abandonnent.",
+  "cliffhanger": "À 3h du matin : Le cœur se rétablit miraculeusement ! Koffi est frappé de migraine fulgurante.",
+  "shots": [
+    {
+      "shot_id": "shot_01",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_01.mp4"
+    },
+    {
+      "shot_id": "shot_02",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_02.mp4"
+    },
+    {
+      "shot_id": "shot_03",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_03.mp4"
+    },
+    {
+      "shot_id": "shot_04",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_04.mp4"
+    },
+    {
+      "shot_id": "shot_05",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_05.mp4"
+    },
+    {
+      "shot_id": "shot_06",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_06.mp4"
+    },
+    {
+      "shot_id": "shot_07",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_07.mp4"
+    },
+    {
+      "shot_id": "shot_08",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_08.mp4"
+    },
+    {
+      "shot_id": "shot_09",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_09.mp4"
+    },
+    {
+      "shot_id": "shot_10",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_10.mp4"
+    },
+    {
+      "shot_id": "shot_11",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_11.mp4"
+    },
+    {
+      "shot_id": "shot_12",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_12.mp4"
+    },
+    {
+      "shot_id": "shot_13",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_13.mp4"
+    },
+    {
+      "shot_id": "shot_14",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_14.mp4"
+    },
+    {
+      "shot_id": "shot_15",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_15.mp4"
+    },
+    {
+      "shot_id": "shot_16",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-005/clips/shot_16.mp4"
+    }
+  ],
+  "audio_tracks": {
+    "voiceover": "episodes/ep-005/audio/voiceover.mp3",
+    "bgm_gospel": "episodes/ep-005/audio/bgm_gospel.mp3"
+  },
+  "subtitles": "episodes/ep-005/subtitles.srt"
+}

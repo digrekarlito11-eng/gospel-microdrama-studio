@@ -1,0 +1,115 @@
+{
+  "episode_id": "ep-006",
+  "title": "Guerre dans l'Invisible — La Panique des Ténèbres",
+  "aspect_ratio": "9:16",
+  "resolution": "1080x1920",
+  "total_shots": 14,
+  "estimated_duration_seconds": 75,
+  "hook": "À genoux sur le béton : chaque prière devient un coup direct dans l'invisible.",
+  "cliffhanger": "Bagarre générale hystérique au maquis de Zagba. Koffi sombre dans la folie de l'insomnie.",
+  "shots": [
+    {
+      "shot_id": "shot_01",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_01.mp4"
+    },
+    {
+      "shot_id": "shot_02",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_02.mp4"
+    },
+    {
+      "shot_id": "shot_03",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_03.mp4"
+    },
+    {
+      "shot_id": "shot_04",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_04.mp4"
+    },
+    {
+      "shot_id": "shot_05",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_05.mp4"
+    },
+    {
+      "shot_id": "shot_06",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_06.mp4"
+    },
+    {
+      "shot_id": "shot_07",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_07.mp4"
+    },
+    {
+      "shot_id": "shot_08",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_08.mp4"
+    },
+    {
+      "shot_id": "shot_09",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_09.mp4"
+    },
+    {
+      "shot_id": "shot_10",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_10.mp4"
+    },
+    {
+      "shot_id": "shot_11",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_11.mp4"
+    },
+    {
+      "shot_id": "shot_12",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_12.mp4"
+    },
+    {
+      "shot_id": "shot_13",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_13.mp4"
+    },
+    {
+      "shot_id": "shot_14",
+      "duration": 5.0,
+      "type": "cinematic_vertical",
+      "status": "ready_for_render",
+      "local_path": "episodes/ep-006/clips/shot_14.mp4"
+    }
+  ],
+  "audio_tracks": {
+    "voiceover": "episodes/ep-006/audio/voiceover.mp3",
+    "bgm_gospel": "episodes/ep-006/audio/bgm_gospel.mp3"
+  },
+  "subtitles": "episodes/ep-006/subtitles.srt"
+}

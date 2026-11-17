@@ -1,4 +1,4 @@
-# Chapitre 1 : L'Ombre du Maquis
+## Chapitre 1 : L'Ombre du Maquis
 
 Le crépuscule s'abattait sur Yopougon comme une étoffe lourde et chaude, gorgée des odeurs d'huile friture, de poussière soulevée par les gbakas et de poisson grillé aux abords de la Rue Princesse. À cette heure précise, la commune ne dormait pas ; elle s'éveillait sous un second souffle, violent, cuivré, rythmé par les basses lourdes du coupé-décalé qui s'échappaient des enceintes surchauffées des maquis.
 
@@ -68,4 +68,6 @@ Elle retourna le papier photo. Au dos, écrit en lettres capitales noires et fer
 
 « TU N'AS NULLE PART OÙ TE CACHER. BIENTÔT, TU SERAS À MOI. »
 
-Un frisson glacial parcourut la colonne vertébrale d'Amina. Le bruit étouffé de la rue au loin sembla soudain s'éteindre, remplacé par le battement lourd et désordonné de sa propre respiration dans la pénombre.
+Un frisson glacial parcourut la colonne vertébrale d'Amina. Le bruit étouffé de la rue au loin sembla soudain s'éteindre, remplacé par le battement lourd et désordonné de sa propre respiration dans la pièce fermée.
+
+---
