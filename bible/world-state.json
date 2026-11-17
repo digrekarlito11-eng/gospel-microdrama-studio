@@ -1,0 +1,42 @@
+{
+  "series_title": "L'Ombre du Maquis — Les Épreuves d'Amina",
+  "current_arc": "Arc 1 : Les Deux Prédateurs de Yopougon",
+  "active_episode": "ep-001",
+  "temporal_anchor": "Fin d'après-midi / Crépuscule à Yopougon (Siporex / Rue Princesse)",
+  "state_summary": "Amina rentre du lycée saine et sauve mais est devenue la cible simultanée de deux menaces distinctes : Zagba le caïd de rue orgueilleux qui a fait le pari de la conquérir avant la fin du mois, et M. Stéphane Koffi, puissant directeur d'affaires froid et calculateur observant ses mouvements depuis sa berline. Une mystérieuse enveloppe kraft avec une photo d'elle prise à son insu portant un message menaçant vient d'être glissée sous sa porte.",
+  "characters_status": {
+    "amina": {
+      "location": "Chambre familiale fermée à clé",
+      "emotional_state": "Effroi, choc, cœur battant lourdement",
+      "inventory": ["Sac de cours de lycée", "Uniforme bleu ciel", "Enveloppe kraft", "Photo volée menaçante", "Clé de la maison"]
+    },
+    "maman_helene": {
+      "location": "Véranda de la cour familiale",
+      "health_condition": "Cardiaque fragile, s'épuise facilement au marché, ignore tout de la menace pesant sur sa fille",
+      "activity": "Triage de piments pour le repas"
+    },
+    "junior_zagba": {
+      "location": "Maquis Le VIP (Siporex)",
+      "goal": "Gagner son pari de rue avant 30 jours pour flatter son orgueil",
+      "threat_level": "Moyen / Pression de rue et harcèlement"
+    },
+    "stephane_koffi": {
+      "location": "Berline noire vitres teintées en mouvement vers le Plateau",
+      "goal": "Identifier les faiblesses financières/familiales d'Amina d'ici la fin de la semaine pour la piéger",
+      "threat_level": "Critique / Pouvoir financier, traque et corruption"
+    }
+  },
+  "key_items": [
+    {
+      "item": "La Photo Volée",
+      "origin": "Prise depuis la berline de M. Koffi",
+      "inscription": "TU N'AS NULLE PART OÙ TE CACHER. BIENTÔT, TU SERAS À MOI.",
+      "current_holder": "Amina"
+    }
+  ],
+  "spiritual_anchor": {
+    "verse": "Proverbes 4:23",
+    "text": "Garde ton cœur plus que toute autre chose, car de lui jaillissent les sources de la vie.",
+    "theme": "L'intégrité face aux vanités matérielles et la foi face à la peur de l'inconnu."
+  }
+}

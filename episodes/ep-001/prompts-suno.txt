@@ -1,0 +1,25 @@
+# ==============================================================================
+# PROMPTS MUSICAUX SUNO AI — Épisode 1
+# ==============================================================================
+
+### PISTE 1 : "Yopougon Street & Maquis Vibe" (00:00 - 00:33)
+* **Prompt Style Suno :**
+  `Instrumental modern Coupé-Décalé, muted urban party bassline, muffled African percussions, distant synth brass, atmospheric street ambiance, Abidjan night rhythm, 128 BPM, background mix`
+* **Utilisation :** Musique diégétique qui provient des enceintes des maquis pendant qu'Amina marche et que Zagba discute avec son acolyte.
+
+---
+
+### PISTE 2 : "The Shadow & The Threat" (00:33 - 00:58)
+* **Prompt Style Suno :**
+  `Cinematic dark cello solo, low ominous sub-bass drone, tension strings, subtle high-tech synth arpeggio, cold suspenseful thriller score, minimalist crime drama, no drums, 80 BPM`
+* **Utilisation :** Bascule sonore dès l'apparition de la berline noire de M. Stéphane Koffi pour installer une atmosphère de menace froide et calculée.
+
+---
+
+### PISTE 3 : "Sanctuary, Heartbeat & Cliffhanger" (00:58 - 01:30)
+* **Prompt Style Suno :**
+  `Gentle emotional Afrogospel acoustic piano chord progression, touching sacred melody, transitioning into heavy rhythmic heartbeat, sudden dissonant violin screech, dramatic orchestral braam hit, sudden cut off`
+* **Utilisation :**
+  * 00:58 - 01:08 : Paix maternelle et foi chaleureuse (piano gospel pur).
+  * 01:08 - 01:24 : Montée de l'angoisse avec les battements de cœur et l'enveloppe.
+  * 01:24 - 01:30 : Impact orchestral lourd au moment de lire la menace.

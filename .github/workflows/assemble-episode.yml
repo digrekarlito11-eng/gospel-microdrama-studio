@@ -1,0 +1,50 @@
+name: Assemble Gospel Episode Cloud Master
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode_id:
+        description: 'Identifiant de l''épisode (ex: ep-001)'
+        required: true
+        default: 'ep-001'
+  push:
+    paths:
+      - 'episodes/**'
+      - 'scripts/**'
+      - 'bible/**'
+
+jobs:
+  build-vertical-microdrama:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install FFmpeg & Fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install edge-tts aiohttp
+
+      - name: Run Voice Synthesis & Video Build Pipeline
+        run: |
+          python scripts/generate_tts_edge.py || echo "Poursuite avec fallback audio"
+          python scripts/build_episode.py
+
+      - name: Upload Video Master & Contact Sheet Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: episode-master-${{ github.sha }}
+          path: |
+            episodes/ep-001/output/episode_001_master_9x16.mp4
+            episodes/ep-001/output/contact_sheet.jpg
