@@ -1,0 +1,22 @@
+# ==============================================================================
+# PROMPTS MUSICAUX SUNO AI — Épisode 2
+# ==============================================================================
+
+### PISTE 1 : "The Golden Trap & Moral Dilemma" (00:00 - 00:25)
+* **Prompt Style Suno :**
+  `Minimalist emotional piano melody with delicate sacred harp, subtle sub-bass pulses, growing melancholic strings, Afro-cinematic gospel score, tender yet ominous, 75 BPM`
+* **Utilisation :** Découverte du cadeau en classe et rappel de la maladie de la mère.
+
+---
+
+### PISTE 2 : "Street Ambush & Motorcross Tension" (00:25 - 00:48)
+* **Prompt Style Suno :**
+  `Aggressive African trap drill beat, heavy 808 sub-bass slides, revving engine FX undertones, tense brass stabs, fast menacing rhythm, street confrontation soundtrack, 140 BPM`
+* **Utilisation :** Débarquement de Zagba et ses motards devant le lycée.
+
+---
+
+### PISTE 3 : "Clash of Titans & Soul Choice" (00:48 - 01:20)
+* **Prompt Style Suno :**
+  `Massive orchestral crash, sudden silence, heavy sustained cello drone, haunting gospel female vocal choir humming in minor key, rising dramatic heartbeat tempo, epic cinematic suspense crescendo, abrupt cut`
+* **Utilisation :** Arrivée de la berline, face-à-face Koffi/Zagba et hésitation tragique d'Amina.

@@ -1,42 +1,42 @@
 {
   "series_title": "L'Ombre du Maquis — Les Épreuves d'Amina",
   "current_arc": "Arc 1 : Les Deux Prédateurs de Yopougon",
-  "active_episode": "ep-001",
-  "temporal_anchor": "Fin d'après-midi / Crépuscule à Yopougon (Siporex / Rue Princesse)",
-  "state_summary": "Amina rentre du lycée saine et sauve mais est devenue la cible simultanée de deux menaces distinctes : Zagba le caïd de rue orgueilleux qui a fait le pari de la conquérir avant la fin du mois, et M. Stéphane Koffi, puissant directeur d'affaires froid et calculateur observant ses mouvements depuis sa berline. Une mystérieuse enveloppe kraft avec une photo d'elle prise à son insu portant un message menaçant vient d'être glissée sous sa porte.",
+  "active_episode": "ep-002",
+  "temporal_anchor": "Lendemain après-midi (14h00) — Sortie du Lycée Municipal de Yopougon",
+  "state_summary": "Amina a surmonté la peur de la nuit par la prière (Psaume 91). Au matin, la santé cardiaque de Maman Hélène s'est aggravée, révélant le besoin urgent d'examens médicaux coûteux. Au lycée, Stéphane Koffi tente de la corrompre avec un iPhone 16 Pro Max et une promesse de payer les soins de sa mère (initiales S.K.). Amina refuse publiquement le cadeau. À la sortie, Zagba et sa bande de motards tentent de la kidnapper ou de l'intimider, mais les gardes du corps de Koffi surgissent et bloquent Zagba. Face-à-face explosif entre la rue et le pouvoir financier.",
   "characters_status": {
     "amina": {
-      "location": "Chambre familiale fermée à clé",
-      "emotional_state": "Effroi, choc, cœur battant lourdement",
-      "inventory": ["Sac de cours de lycée", "Uniforme bleu ciel", "Enveloppe kraft", "Photo volée menaçante", "Clé de la maison"]
+      "location": "Trottoir devant le portail du Lycée Municipal de Yopougon",
+      "emotional_state": "Courage inébranlable, foi éprouvée, prise en étau entre deux feux",
+      "inventory": ["Sac de cours de lycée", "Uniforme bleu ciel", "Bible de cuir usée (à la maison)", "Lettre de menace conservée"]
     },
     "maman_helene": {
-      "location": "Véranda de la cour familiale",
-      "health_condition": "Cardiaque fragile, s'épuise facilement au marché, ignore tout de la menace pesant sur sa fille",
-      "activity": "Triage de piments pour le repas"
+      "location": "Maison familiale / repos forcé",
+      "health_condition": "Dégradation cardiaque préoccupante, ordonnance coûteuse en attente",
+      "activity": "Repos au lit"
     },
     "junior_zagba": {
-      "location": "Maquis Le VIP (Siporex)",
-      "goal": "Gagner son pari de rue avant 30 jours pour flatter son orgueil",
-      "threat_level": "Moyen / Pression de rue et harcèlement"
+      "location": "Devant le lycée, adossé à sa moto de cross",
+      "goal": "Laver son orgueil blessé en forçant Amina à monter sur sa moto",
+      "threat_level": "Élevé / Agression physique et intimidation publique, désormais confronté aux hommes de Koffi"
     },
     "stephane_koffi": {
-      "location": "Berline noire vitres teintées en mouvement vers le Plateau",
-      "goal": "Identifier les faiblesses financières/familiales d'Amina d'ici la fin de la semaine pour la piéger",
-      "threat_level": "Critique / Pouvoir financier, traque et corruption"
+      "location": "À bord de sa berline noire arrêtée devant le lycée",
+      "goal": "S'imposer en 'sauveur' tout-puissant en écrasant Zagba et en tenant Amina par la dette médicale",
+      "threat_level": "Critique / Manipulation psychologique, emprise financière"
     }
   },
   "key_items": [
     {
-      "item": "La Photo Volée",
-      "origin": "Prise depuis la berline de M. Koffi",
-      "inscription": "TU N'AS NULLE PART OÙ TE CACHER. BIENTÔT, TU SERAS À MOI.",
-      "current_holder": "Amina"
+      "item": "L'iPhone 16 Pro Max sous blister & la carte dorée S.K.",
+      "origin": "Déposé par les émissaires de M. Koffi",
+      "inscription": "Pour que tu répondes quand j'appelle. Ne laisse pas la maladie de ta mère emporter l'avenir d'une reine.",
+      "status": "Rejeté publiquement par Amina"
     }
   ],
   "spiritual_anchor": {
-    "verse": "Proverbes 4:23",
-    "text": "Garde ton cœur plus que toute autre chose, car de lui jaillissent les sources de la vie.",
-    "theme": "L'intégrité face aux vanités matérielles et la foi face à la peur de l'inconnu."
+    "verse": "Psaume 91:1-5",
+    "text": "Celui qui demeure sous l'abri du Très-Haut repose à l'ombre du Tout-Puissant. Tu ne craindras ni les terreurs de la nuit, ni la flèche qui vole de jour.",
+    "theme": "Le refus du compromis matériel et la protection divine au cœur de la tempête."
   }
 }

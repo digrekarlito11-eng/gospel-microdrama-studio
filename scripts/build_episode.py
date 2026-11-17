@@ -15,7 +15,9 @@ import subprocess
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 STUDIO_ROOT = os.path.dirname(SCRIPT_DIR)
-EPISODE_DIR = os.path.join(STUDIO_ROOT, "episodes", "ep-001")
+
+TARGET_EP = sys.argv[1] if len(sys.argv) > 1 else "ep-001"
+EPISODE_DIR = os.path.join(STUDIO_ROOT, "episodes", TARGET_EP)
 CLIPS_DIR = os.path.join(EPISODE_DIR, "clips")
 AUDIO_DIR = os.path.join(EPISODE_DIR, "audio")
 OUTPUT_DIR = os.path.join(EPISODE_DIR, "output")
@@ -156,7 +158,7 @@ def assemble_full_video(manifest):
 
     voiceover_path = os.path.join(AUDIO_DIR, "voiceover.mp3")
     bgm_path = os.path.join(AUDIO_DIR, "bgm_gospel.mp3")
-    final_output = os.path.join(OUTPUT_DIR, "episode_001_master_9x16.mp4")
+    final_output = os.path.join(OUTPUT_DIR, f"{TARGET_EP}_master_9x16.mp4")
 
     print("🎛️ Mixage audio avec Ducking (Voix + Musique) et gravure des sous-titres...")
     
