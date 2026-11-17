@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+episodes/*/clips/
+episodes/*/output/*.mp4
+!episodes/*/output/contact_sheet.jpg
