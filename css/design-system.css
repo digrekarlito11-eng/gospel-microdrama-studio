@@ -1,0 +1,410 @@
+/**
+ * AMINA Experience — Design System "Abidjan Twilight Noir & Celestial Grace"
+ * Canonical color palette, typography, glassmorphism, reset & utility classes
+ */
+
+:root {
+  /* Chromatic Palette */
+  --bg-night-black: #070709;
+  --bg-abidjan-night: #0A1128;
+  --bg-deep-indigo: #0F172A;
+  --bg-overlay: rgba(7, 7, 9, 0.82);
+
+  /* Celestial Gold & Sunset Amber */
+  --gold-primary: #D4AF37;
+  --gold-bright: #F5D061;
+  --gold-deep: #B38F24;
+  --gold-glow: rgba(212, 175, 55, 0.4);
+  --gold-border: rgba(212, 175, 55, 0.28);
+  --gold-surface: rgba(212, 175, 55, 0.12);
+
+  --sunset-amber: #FF7A00;
+  --sunset-deep: #E65100;
+  --sunset-glow: rgba(255, 122, 0, 0.4);
+
+  --grace-sky: #4EBEFF;
+  --grace-sky-light: #E0F2FE;
+  --grace-glow: rgba(78, 190, 255, 0.35);
+
+  --neon-crimson: #FF2A55;
+  --success-emerald: #10B981;
+
+  /* Surfaces & Glassmorphism */
+  --surface-card: rgba(10, 17, 40, 0.85);
+  --surface-elevated: rgba(14, 23, 56, 0.92);
+  --surface-glass: rgba(255, 255, 255, 0.05);
+  --surface-input: rgba(255, 255, 255, 0.08);
+
+  /* Borders & Shadows */
+  --border-subtle: rgba(255, 255, 255, 0.12);
+  --shadow-lg: 0 10px 30px -5px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
+  --shadow-glow: 0 0 25px var(--gold-glow);
+
+  /* Typography */
+  --font-display: 'Cinzel', 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-reader: 'Charter', 'Merriweather', Georgia, serif;
+
+  /* Dimensions */
+  --bottom-nav-height: 64px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Global Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-night-black);
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* App Viewport Root (100dvh for modern mobile browsers) */
+#app {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: radial-gradient(circle at 50% 20%, #111D42 0%, var(--bg-abidjan-night) 50%, var(--bg-night-black) 100%);
+  overflow: hidden;
+}
+
+/* Tab Screens Container */
+.screen-container {
+  flex: 1;
+  width: 100%;
+  height: calc(100% - var(--bottom-nav-height) - var(--safe-bottom));
+  position: relative;
+  overflow: hidden;
+}
+
+.screen-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+  transition: opacity var(--transition-smooth);
+}
+
+.screen-view.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Bottom Navigation Bar (PWA Shell) */
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(var(--bottom-nav-height) + var(--safe-bottom));
+  padding-bottom: var(--safe-bottom);
+  background: rgba(7, 7, 9, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid var(--gold-border);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 900;
+  box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.7);
+}
+
+.nav-item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  text-decoration: none;
+}
+
+.nav-item .nav-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast);
+}
+
+.nav-item .nav-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.nav-item:active {
+  transform: scale(0.95);
+}
+
+.nav-item.active {
+  color: var(--gold-bright);
+}
+
+.nav-item.active .nav-icon {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 8px var(--gold-glow));
+}
+
+.nav-item .nav-badge {
+  position: absolute;
+  top: 6px;
+  right: calc(50% - 22px);
+  background: var(--sunset-amber);
+  color: #FFFFFF;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: var(--radius-full);
+}
+
+/* Floating Audio Bar (Universal) */
+.ambient-audio-bar {
+  position: absolute;
+  top: calc(var(--safe-top) + 10px);
+  left: 12px;
+  z-index: 850;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(10, 17, 40, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  user-select: none;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.ambient-audio-bar:active {
+  transform: scale(0.96);
+}
+
+.audio-equalizer {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 14px;
+}
+
+.audio-bar {
+  width: 3px;
+  height: 100%;
+  background: var(--gold-bright);
+  border-radius: 2px;
+  animation: none;
+}
+
+.ambient-audio-bar.playing .audio-bar:nth-child(1) {
+  animation: soundwave 0.8s ease-in-out infinite alternate;
+}
+.ambient-audio-bar.playing .audio-bar:nth-child(2) {
+  animation: soundwave 0.6s ease-in-out 0.2s infinite alternate;
+}
+.ambient-audio-bar.playing .audio-bar:nth-child(3) {
+  animation: soundwave 1.0s ease-in-out 0.4s infinite alternate;
+}
+
+@keyframes soundwave {
+  0% { height: 4px; }
+  100% { height: 14px; }
+}
+
+.audio-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold-bright);
+  letter-spacing: 0.5px;
+}
+
+/* Button & Badge Utilities */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  user-select: none;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #F5D061 0%, #D4AF37 60%, #B38F24 100%);
+  color: #070709;
+  font-weight: 700;
+  box-shadow: 0 4px 15px var(--gold-glow);
+}
+
+.btn-gold:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 8px var(--gold-glow);
+}
+
+.btn-amber {
+  background: linear-gradient(135deg, #FF9100 0%, #FF7A00 70%, #E65100 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  box-shadow: 0 4px 15px var(--sunset-glow);
+}
+
+.btn-amber:active {
+  transform: scale(0.97);
+}
+
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+}
+
+.btn-whatsapp:active {
+  transform: scale(0.97);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  color: var(--gold-bright);
+  border: 1px solid var(--gold-primary);
+}
+
+.btn-outline-gold:active {
+  background: var(--gold-surface);
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-gold {
+  background: var(--gold-surface);
+  color: var(--gold-bright);
+  border: 1px solid var(--gold-border);
+}
+
+.badge-free {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34D399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-locked {
+  background: rgba(255, 122, 0, 0.15);
+  color: #FFA500;
+  border: 1px solid rgba(255, 122, 0, 0.3);
+}
+
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  top: calc(var(--safe-top) + 20px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+  width: 90%;
+  max-width: 380px;
+}
+
+.toast {
+  background: rgba(10, 17, 40, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--gold-primary);
+  color: #FFFFFF;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all var(--transition-smooth);
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast-gold {
+  border-color: var(--gold-bright);
+  color: var(--gold-bright);
+}
+
+.toast-success {
+  border-color: var(--success-emerald);
+}
+
+/* Confetti Canvas for Festive Unlocks */
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 2500;
+}

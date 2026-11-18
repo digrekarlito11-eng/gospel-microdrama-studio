@@ -1,0 +1,32 @@
+{
+  "name": "AMINA : L'Autel De Yopougon — La Guerre Invisible",
+  "short_name": "AMINA",
+  "description": "Micro-drama chrétien vertical 9:16 et roman intégral inspiré des enseignements du pasteur Yvan Castanou par Karl DIGRÉ.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070709",
+  "theme_color": "#0A1128",
+  "lang": "fr-FR",
+  "dir": "ltr",
+  "categories": ["entertainment", "books", "video"],
+  "icons": [
+    {
+      "src": "assets/cover.jpg",
+      "sizes": "641x1024",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/cover.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/cover.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

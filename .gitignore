@@ -6,3 +6,7 @@ __pycache__/
 episodes/*/clips/
 episodes/*/output/*.mp4
 !episodes/*/output/contact_sheet.jpg
+node_modules/
+playwright-report/
+test-results/
+.agents/

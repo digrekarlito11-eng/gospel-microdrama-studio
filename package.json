@@ -1,0 +1,14 @@
+{
+  "name": "amina-experience",
+  "version": "1.0.0",
+  "description": "AMINA Experience — PWA Transmédia & Gospel Micro-Drama Studio",
+  "scripts": {
+    "test": "node --test tests/unit/*.test.js",
+    "test:unit": "node --test tests/unit/*.test.js",
+    "test:e2e": "playwright test",
+    "start": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}

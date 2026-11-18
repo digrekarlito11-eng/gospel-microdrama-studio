@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0A1128">
+  <meta name="description" content="AMINA : L'Autel De Yopougon — La Guerre Invisible. Micro-drama vertical 9:16 chrétien et roman complet inspiré d'Yvan Castanou par Karl DIGRÉ.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>AMINA : L'Autel De Yopougon — Micro-Drama & Roman</title>
+
+  <!-- PWA Manifest & Icons -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/cover.jpg">
+
+  <!-- Typography: Plus Jakarta Sans & Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Design System & Component Styles -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/player.css">
+  <link rel="stylesheet" href="css/reader.css">
+  <link rel="stylesheet" href="css/modals.css">
+
+  <style>
+    /* Store Screen Dedicated Styles */
+    .store-screen-container {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      padding: calc(var(--safe-top) + 20px) 18px calc(var(--bottom-nav-height) + 50px);
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .store-hero {
+      text-align: center;
+      padding: 24px 16px;
+      background: radial-gradient(circle at 50% 20%, #172554 0%, var(--bg-abidjan-night) 70%, var(--bg-night-black) 100%);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .store-cover-img {
+      width: 140px;
+      height: 210px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--gold-primary);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7), 0 0 20px var(--gold-glow);
+      margin-bottom: 16px;
+    }
+
+    .store-card {
+      background: var(--surface-card);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    }
+
+    .store-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .store-price {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--gold-bright);
+    }
+
+    .store-features-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .store-features-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .store-features-list li::before {
+      content: '✓';
+      color: var(--gold-bright);
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="app">
+    <!-- Floating Universal Ambient Audio Indicator -->
+    <div class="ambient-audio-bar" id="ambient-audio-bar" title="Activer / Couper la musique Afrogospel">
+      <div class="audio-equalizer">
+        <div class="audio-bar"></div>
+        <div class="audio-bar"></div>
+        <div class="audio-bar"></div>
+      </div>
+      <span class="audio-label" id="ambient-audio-label">Musique</span>
+    </div>
+
+    <!-- Main Screens Viewport -->
+    <main class="screen-container">
+      <!-- Screen 1: 9:16 Vertical Video Player (TikTok/Reels feed) -->
+      <section class="screen-view active" id="screen-player" aria-label="Lecteur Micro-Drama 9:16"></section>
+
+      <!-- Screen 2: Interactive E-Reader (11 Chapters, Preamble, Guide) -->
+      <section class="screen-view" id="screen-reader" aria-label="Liseuse de roman chrétien"></section>
+
+      <!-- Screen 3: Roman Papier & Pass Saison Store -->
+      <section class="screen-view" id="screen-store" aria-label="Pass Saison et Roman Papier">
+        <div class="store-screen-container">
+          <!-- Hero Section -->
+          <div class="store-hero">
+            <img src="assets/cover.jpg" alt="Couverture officielle AMINA" class="store-cover-img">
+            <span class="badge badge-gold" style="margin-bottom: 8px;">Édition Officielle</span>
+            <h1 style="font-family: var(--font-display); font-size: 22px; color: var(--gold-bright); margin-bottom: 6px;">
+              AMINA : L'Autel De Yopougon
+            </h1>
+            <p style="font-size: 13px; color: rgba(255,255,255,0.75); line-height: 1.4;">
+              Une œuvre inspirée des enseignements du pasteur Yvan Castanou sur la prière persistante (<em>hupopiazo</em>) par Karl DIGRÉ.
+            </p>
+          </div>
+
+          <!-- Pass Saison Mobile Money Card -->
+          <div class="store-card">
+            <div class="store-card-header">
+              <div>
+                <span class="badge badge-gold">Accès Illimité</span>
+                <h3 style="font-size: 17px; font-weight: 700; margin-top: 4px;">Pass Saison Numérique</h3>
+              </div>
+              <div class="store-price">1 000 FCFA</div>
+            </div>
+            <p style="font-size: 13px; color: rgba(255,255,255,0.8); line-height: 1.45;">
+              Débloquez instantanément l'intégralité des 11 épisodes de micro-dramas et accédez sans restriction à la liseuse complète hors-ligne.
+            </p>
+            <ul class="store-features-list">
+              <li>Les 11 épisodes de micro-dramas débloqués</li>
+              <li>Manuscrit intégral des 11 chapitres & Guide Pratique</li>
+              <li>Paiement instantané Wave CI, Orange Money, MTN MoMo</li>
+              <li>Accès permanent sauvegardé sur votre appareil</li>
+            </ul>
+            <button class="btn btn-gold" id="btn-store-season-pass">
+              <span>⭐ Activer le Pass Saison (1 000 FCFA)</span>
+            </button>
+          </div>
+
+          <!-- Roman Papier WhatsApp Direct Order Card -->
+          <div class="store-card">
+            <div class="store-card-header">
+              <div>
+                <span class="badge badge-gold">Livre Imprimé Dédicacé</span>
+                <h3 style="font-size: 17px; font-weight: 700; margin-top: 4px;">Commander le Roman Physique</h3>
+              </div>
+              <div class="store-price">5 000 FCFA</div>
+            </div>
+            <p style="font-size: 13px; color: rgba(255,255,255,0.8); line-height: 1.45;">
+              Recevez votre livre relié officiel, dédicacé en mains propres par l'auteur Karl DIGRÉ à Abidjan (ou expédié dans toute l'Afrique de l'Ouest).
+            </p>
+            <ul class="store-features-list">
+              <li>Exemplaire physique papier broché haute qualité</li>
+              <li>Dédicace personnalisée de l'auteur Karl DIGRÉ</li>
+              <li>Livraison rapide à Abidjan (Yopougon, Cocody, Marcory...)</li>
+              <li>Support et contact direct WhatsApp de l'auteur</li>
+            </ul>
+            <a href="https://wa.me/2250700889514?text=Bonjour%20Karl%20DIGR%C3%A9%2C%20je%20souhaite%20commander%20le%20livre%20physique%20AMINA%20d%C3%A9dicac%C3%A9%20%C3%A0%20Abidjan."
+               target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="btn-store-book-order">
+              <span>💬 Commander sur WhatsApp (+225 07 00 88 95 14)</span>
+            </a>
+          </div>
+
+          <!-- Spiritual Footnote -->
+          <div style="text-align: center; padding: 12px 10px; font-size: 12px; opacity: 0.6; line-height: 1.5;">
+            « Celui qui demeure sous l'abri du Très-Haut repose à l'ombre du Tout-Puissant. » — Psaume 91:1
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom Navigation Bar (PWA Shell) -->
+    <nav class="bottom-nav" role="navigation" aria-label="Navigation principale">
+      <button class="nav-item active" data-tab="player" aria-label="Micro-Dramas 9:16">
+        <div class="nav-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/>
+          </svg>
+        </div>
+        <span>Micro-Dramas</span>
+      </button>
+
+      <button class="nav-item" data-tab="reader" aria-label="Liseuse du roman">
+        <div class="nav-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/>
+          </svg>
+        </div>
+        <span>Liseuse</span>
+      </button>
+
+      <button class="nav-item" data-tab="store" aria-label="Roman & Pass Saison">
+        <div class="nav-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M19 14V6c0-1.1-.9-2-2-2H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zm-9-1c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm13-6v11c0 1.1-.9 2-2 2H4v-2h17V7h2z"/>
+          </svg>
+        </div>
+        <span class="nav-badge">Pass</span>
+        <span>Pass & Roman</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Data Registries -->
+  <script src="js/data/episodes-data.js"></script>
+  <script src="js/data/book-data.js"></script>
+
+  <!-- App Architecture Modules -->
+  <script src="js/state.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/monetization.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/reader.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

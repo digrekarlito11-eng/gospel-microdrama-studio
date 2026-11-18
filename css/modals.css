@@ -1,0 +1,394 @@
+/**
+ * AMINA Experience — Modals & Monetization Styles
+ * High-fidelity Wave CI, Orange Money CI, MTN MoMo simulation,
+ * WhatsApp viral share modal, festive confetti and animations
+ */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background: rgba(4, 6, 15, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 1500;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-smooth), visibility var(--transition-smooth);
+}
+
+.modal-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-card {
+  width: 100%;
+  max-width: 440px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: radial-gradient(circle at 50% 10%, #172554 0%, var(--bg-abidjan-night) 50%, var(--bg-night-black) 100%);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px var(--gold-glow);
+  padding: 24px 20px;
+  position: relative;
+  transform: translateY(30px) scale(0.95);
+  transition: transform var(--transition-smooth);
+  color: #FFFFFF;
+}
+
+.modal-backdrop.open .modal-card {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-subtle);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.modal-close-btn:active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.modal-close-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* Modal Header */
+.modal-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-header .badge {
+  margin-bottom: 8px;
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gold-bright);
+  line-height: 1.3;
+}
+
+.modal-sub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 4px;
+}
+
+/* Unlock Choice Tabs */
+.modal-tabs {
+  display: flex;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 4px;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+
+.modal-tab-btn {
+  flex: 1;
+  padding: 10px 8px;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.modal-tab-btn.active {
+  background: var(--gold-surface);
+  color: var(--gold-bright);
+  border: 1px solid var(--gold-border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Tab Panels */
+.tab-panel {
+  display: none;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* WhatsApp Share Section */
+.whatsapp-share-card {
+  background: rgba(10, 17, 40, 0.6);
+  border: 1px solid rgba(37, 211, 102, 0.3);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.share-benefit {
+  font-size: 13px;
+  color: #E2E8F0;
+  line-height: 1.45;
+}
+
+.share-preview-box {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  text-align: left;
+  border-left: 2px solid #25D366;
+}
+
+/* Mobile Money Section */
+.momo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.price-banner {
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--gold-primary);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-desc {
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.price-amount {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--gold-bright);
+}
+
+.operator-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.operator-card {
+  padding: 10px 6px;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--border-subtle);
+  background: rgba(10, 17, 40, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.operator-card:active {
+  transform: scale(0.95);
+}
+
+.operator-card.selected {
+  border-color: var(--gold-bright);
+  background: var(--gold-surface);
+  box-shadow: 0 0 12px var(--gold-glow);
+}
+
+.operator-badge-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 11px;
+}
+
+.operator-card[data-operator="wave"] .operator-badge-logo {
+  background: #1DA1F2;
+  color: #FFFFFF;
+}
+
+.operator-card[data-operator="orange"] .operator-badge-logo {
+  background: #FF6600;
+  color: #FFFFFF;
+}
+
+.operator-card[data-operator="mtn"] .operator-badge-logo {
+  background: #FFCC00;
+  color: #070709;
+}
+
+.operator-name {
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.operator-hint {
+  font-size: 9px;
+  opacity: 0.6;
+}
+
+/* Phone Input Form */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.input-with-prefix {
+  display: flex;
+  align-items: center;
+  background: var(--surface-input);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.input-with-prefix:focus-within {
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 10px var(--gold-glow);
+}
+
+.input-prefix {
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold-bright);
+  border-right: 1px solid var(--border-subtle);
+}
+
+.form-input {
+  flex: 1;
+  padding: 12px 14px;
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* Simulated Checkout Processing Overlay / Step */
+.simulation-processing {
+  text-align: center;
+  padding: 24px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.spinner-ring {
+  width: 52px;
+  height: 52px;
+  border: 4px solid rgba(212, 175, 55, 0.2);
+  border-top-color: var(--gold-bright);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.processing-step-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold-bright);
+  min-height: 24px;
+}
+
+.processing-sub-text {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Success Celebration Screen */
+.simulation-success {
+  text-align: center;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.success-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.15);
+  border: 2px solid #10B981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #10B981;
+  animation: bounceIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  70% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.success-icon-wrap svg {
+  width: 36px;
+  height: 36px;
+  fill: currentColor;
+}
