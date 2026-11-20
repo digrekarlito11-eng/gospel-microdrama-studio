@@ -21,9 +21,15 @@ on:
         options:
           - '1080p'
           - '720p'
+      import_run_id:
+        description: "Optionnel : ID d'un run précédent dont importer les artefacts déjà validés"
+        required: false
+        default: ''
+        type: string
 
 permissions:
   contents: write
+  actions: read
 
 jobs:
   plan:
@@ -125,6 +131,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: read
 
     steps:
       - name: Checkout repository
@@ -142,6 +149,20 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ffmpeg
           pip install --upgrade Pillow
+
+      - name: Import verified cinema artifacts from prior run (optional)
+        if: ${{ inputs.import_run_id != '' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          IMPORT_RUN_ID: ${{ inputs.import_run_id }}
+          REPO_NAME: ${{ github.repository }}
+        run: |
+          mkdir -p dist_artifacts
+          gh run download "${IMPORT_RUN_ID}" \
+            --repo "${REPO_NAME}" \
+            --pattern "cinema-*" \
+            --dir dist_artifacts
+          ls -la dist_artifacts
 
       - name: Download all rendered cinema artifacts
         uses: actions/download-artifact@v4
