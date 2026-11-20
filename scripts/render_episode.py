@@ -110,6 +110,7 @@ def _render_scene_clip(
         f"crop={ss_w}:{ss_h},"
         f"unsharp=5:5:0.5:5:5:0.0,"
         f"{zp},"
+        f"scale=in_range=full:out_range=tv:out_color_matrix=bt709,"
         f"settb=AVTB,setpts=PTS-STARTPTS,fps={FPS},format=yuv420p"
     )
     cmd = [
@@ -118,7 +119,10 @@ def _render_scene_clip(
         "-vf", vf,
         "-frames:v", str(frames),
         "-c:v", "libx264", "-preset", "ultrafast", "-crf", "16",
-        "-pix_fmt", "yuv420p", "-an",
+        "-pix_fmt", "yuv420p",
+        "-color_range", "tv", "-colorspace", "bt709",
+        "-color_primaries", "bt709", "-color_trc", "bt709",
+        "-an",
         output_clip,
     ]
     subprocess.run(cmd, check=True)
@@ -191,7 +195,8 @@ def _assemble_master_video(
     bar_y = height - bar_h
     filters.append(f"color=c=0xD4AF37:s={width}x{bar_h}:r={FPS}:d={total_vid_dur:.3f}[pbar]")
     filters.append(
-        f"[subbed][pbar]overlay=x='-W+W*(t/{total_vid_dur:.3f})':y={bar_y}:shortest=1,format=yuv420p[vout]"
+        f"[subbed][pbar]overlay=x='-W+W*(t/{total_vid_dur:.3f})':y={bar_y}:shortest=1,"
+        f"scale=out_range=tv:out_color_matrix=bt709,format=yuv420p[vout]"
     )
 
     # Broadcast audio mix: sidechaincompress ducking of Afrogospel BGM under dialogue + loudnorm
@@ -218,6 +223,8 @@ def _assemble_master_video(
         "-map", "[aout]",
         "-c:v", "libx264", "-profile:v", "high", "-level", "4.1",
         "-preset", "fast", "-crf", "22", "-pix_fmt", "yuv420p",
+        "-color_range", "tv", "-colorspace", "bt709",
+        "-color_primaries", "bt709", "-color_trc", "bt709",
         "-movflags", "+faststart",
         "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-ac", "2",
         "-shortest",

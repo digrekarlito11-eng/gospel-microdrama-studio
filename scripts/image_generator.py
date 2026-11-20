@@ -373,9 +373,9 @@ class SceneImageGenerator:
             "params": {
                 "width": 384,
                 "height": 640,
-                "steps": 20,
+                "steps": 16,
                 "cfg_scale": 7.0,
-                "sampler_name": "k_euler_a",
+                "sampler_name": "k_euler",
                 "n": 1,
                 "seed": str(seed),
             },
