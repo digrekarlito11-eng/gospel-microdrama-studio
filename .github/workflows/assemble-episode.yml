@@ -4,47 +4,83 @@ on:
   workflow_dispatch:
     inputs:
       episode_id:
-        description: 'Identifiant de l''épisode (ex: ep-001)'
+        description: "Identifiant de l'épisode (ex: ep-001..ep-011)"
         required: true
         default: 'ep-001'
+        type: string
+      resolution:
+        description: "Résolution verticale 9:16"
+        required: false
+        default: '1080p'
+        type: choice
+        options:
+          - '1080p'
+          - '720p'
   push:
     paths:
-      - 'episodes/**'
       - 'scripts/**'
       - 'bible/**'
 
 jobs:
   build-vertical-microdrama:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install FFmpeg & Fonts
+      - name: Install FFmpeg, libass and fonts
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          sudo apt-get install -y ffmpeg libass-dev fonts-dejavu-core fonts-liberation
 
       - name: Install Python Dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install edge-tts aiohttp
+          python3 -m pip install --upgrade pip
+          pip install --upgrade "edge-tts>=7.3.1" Pillow requests aiohttp
 
-      - name: Run Voice Synthesis & Video Build Pipeline
+      - name: Validate Pipeline Modules & Storyboards
         run: |
-          python scripts/generate_tts_edge.py || echo "Poursuite avec fallback audio"
-          python scripts/build_episode.py
+          python3 -m py_compile scripts/*.py
+          python3 scripts/storyboards.py
 
-      - name: Upload Video Master & Contact Sheet Artifacts
+      - name: Render Single Episode (workflow_dispatch)
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          EP_ID: ${{ inputs.episode_id || 'ep-001' }}
+          RESOLUTION: ${{ inputs.resolution || '1080p' }}
+        run: |
+          python3 scripts/render_episode.py \
+            --episode "${EP_ID}" \
+            --output-dir "build_out/${EP_ID}" \
+            --resolution "${RESOLUTION}" \
+            --provider auto
+          python3 scripts/verify_episode.py \
+            "build_out/${EP_ID}/${EP_ID}.mp4" \
+            --meta "build_out/${EP_ID}/${EP_ID}_meta.json" \
+            --strict-production
+
+      - name: Smoke Test Pipeline on Push (Fast 720p)
+        if: github.event_name == 'push'
+        run: |
+          python3 scripts/render_episode.py \
+            --episode ep-001 \
+            --output-dir build_out/ep-001 \
+            --resolution 720p \
+            --provider fallback \
+            --offline-test-audio
+          python3 scripts/verify_episode.py \
+            build_out/ep-001/ep-001.mp4 \
+            --meta build_out/ep-001/ep-001_meta.json
+
+      - name: Upload Rendered Episode Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: episode-master-${{ github.sha }}
-          path: |
-            episodes/ep-001/output/episode_001_master_9x16.mp4
-            episodes/ep-001/output/contact_sheet.jpg
+          name: episode-master-${{ inputs.episode_id || 'ep-001' }}-${{ github.sha }}
+          path: build_out/${{ inputs.episode_id || 'ep-001' }}

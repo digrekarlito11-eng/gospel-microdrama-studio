@@ -111,7 +111,10 @@
       if (tabName === 'player') {
         // Leaving reading -> resuming video check
         const curEp = window.AminaPlayer ? window.AminaPlayer.getCurrentEpisode() : null;
-        if (curEp && curEp.hasLocalVideo && window.AminaState && window.AminaState.isEpisodeUnlocked(curEp.id)) {
+        const hasPlayable = window.AminaPlayer && typeof window.AminaPlayer._hasPlayableVideo === 'function'
+          ? window.AminaPlayer._hasPlayableVideo(curEp)
+          : Boolean(curEp && ((curEp.hasRemoteVideo && curEp.remoteVideoUrl) || (curEp.hasLocalVideo && curEp.videoSrc)));
+        if (curEp && hasPlayable && window.AminaState && window.AminaState.isEpisodeUnlocked(curEp.id)) {
           // Video will manage its ducking on play
         }
       } else {

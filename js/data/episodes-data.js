@@ -7,6 +7,14 @@
 (function (global) {
   'use strict';
 
+  const RELEASE_TAG = 'episodes-v1';
+  const RELEASE_BASE_URL = `https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/${RELEASE_TAG}`;
+  const AMINA_RELEASE_CONFIG = {
+    tag: RELEASE_TAG,
+    baseUrl: RELEASE_BASE_URL,
+    releaseUrl: `https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/tag/${RELEASE_TAG}`
+  };
+
   const AMINA_EPISODES = [
   {
     "id": "ep-001",
@@ -615,13 +623,30 @@
   }
 ];
 
+  // Option 3 Cinéma Animé — Additive GitHub Releases metadata (preserves all existing local fields)
+  AMINA_EPISODES.forEach((ep) => {
+    const assetUrl = `${RELEASE_BASE_URL}/${ep.id}.mp4`;
+    ep.remoteVideoUrl = assetUrl;
+    ep.downloadUrl = assetUrl;
+    ep.hasRemoteVideo = true;
+    ep.hasBurnedSubtitles = true;
+    ep.poster = ep.hasContactSheet && ep.contactSheet ? ep.contactSheet : 'assets/cover.jpg';
+  });
+
   if (typeof window !== 'undefined') {
     window.AMINA_EPISODES = AMINA_EPISODES;
+    window.AMINA_RELEASE_CONFIG = AMINA_RELEASE_CONFIG;
   }
   if (typeof globalThis !== 'undefined') {
     globalThis.AMINA_EPISODES = AMINA_EPISODES;
+    globalThis.AMINA_RELEASE_CONFIG = AMINA_RELEASE_CONFIG;
   }
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { AMINA_EPISODES };
+    module.exports = {
+      AMINA_EPISODES,
+      AMINA_RELEASE_CONFIG,
+      RELEASE_TAG,
+      RELEASE_BASE_URL
+    };
   }
 })(typeof window !== 'undefined' ? window : globalThis);

@@ -3,7 +3,7 @@
  * Cache-First with Stale-While-Revalidate strategy for offline resilience.
  */
 
-const CACHE_NAME = 'amina-pwa-v1';
+const CACHE_NAME = 'amina-pwa-v2';
 
 const STATIC_SHELL_ASSETS = [
   './',
@@ -56,6 +56,18 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
 
   const url = new URL(event.request.url);
+
+  // Bypass SW completely for cross-origin URLs (GitHub Releases / redirects / CDN),
+  // HTTP 206 Range requests, video/.mp4 streaming, and dynamic videos-manifest.json
+  if (
+    url.origin !== self.location.origin ||
+    event.request.headers.has('range') ||
+    event.request.destination === 'video' ||
+    url.pathname.endsWith('.mp4') ||
+    url.pathname.endsWith('videos-manifest.json')
+  ) {
+    return;
+  }
 
   // Strategy: Cache-first for static local assets, network fallback
   event.respondWith(

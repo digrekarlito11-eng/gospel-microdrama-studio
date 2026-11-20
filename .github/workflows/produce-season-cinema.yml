@@ -1,0 +1,244 @@
+name: Produce Season 1 Motion-Cinema (100% Free)
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Épisode cible ('all' pour toute la saison, ou ep-001..ep-011)"
+        required: true
+        default: 'all'
+        type: string
+      release_tag:
+        description: "Tag GitHub Release cible"
+        required: true
+        default: 'episodes-v1'
+        type: string
+      resolution:
+        description: "Résolution verticale 9:16"
+        required: true
+        default: '1080p'
+        type: choice
+        options:
+          - '1080p'
+          - '720p'
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    name: Plan Episode Matrix
+    runs-on: ubuntu-latest
+    outputs:
+      episodes: ${{ steps.set-matrix.outputs.episodes }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compute target episode matrix
+        id: set-matrix
+        env:
+          TARGET_EPISODE: ${{ inputs.episode || 'all' }}
+        run: |
+          python3 - <<'PY'
+          import json, os, sys
+          sys.path.insert(0, ".")
+          from scripts.storyboards import get_all_episode_ids
+
+          all_eps = get_all_episode_ids()
+          target = os.environ.get("TARGET_EPISODE", "all").strip().lower()
+          if target == "all":
+              selected = all_eps
+          else:
+              if target not in all_eps:
+                  raise SystemExit(f"Invalid episode '{target}'. Expected 'all' or one of {all_eps}")
+              selected = [target]
+
+          payload = json.dumps(selected)
+          print(f"Selected episodes: {payload}")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+              fh.write(f"episodes={payload}\n")
+          PY
+
+  render:
+    name: Render ${{ matrix.episode }}
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 11
+      matrix:
+        episode: ${{ fromJson(needs.plan.outputs.episodes) }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install FFmpeg, libass and fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg libass-dev fonts-dejavu-core fonts-liberation
+
+      - name: Install Python dependencies (100% free)
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install --upgrade "edge-tts>=7.3.1" Pillow requests aiohttp
+
+      - name: Render 2.5D Motion-Cinema Episode
+        env:
+          EP_ID: ${{ matrix.episode }}
+          RESOLUTION: ${{ inputs.resolution || '1080p' }}
+          RELEASE_TAG: ${{ inputs.release_tag || 'episodes-v1' }}
+        run: |
+          python3 scripts/render_episode.py \
+            --episode "${EP_ID}" \
+            --output-dir "build_out/${EP_ID}" \
+            --resolution "${RESOLUTION}" \
+            --provider auto \
+            --release-tag "${RELEASE_TAG}"
+
+      - name: Strict Production QA Verification
+        env:
+          EP_ID: ${{ matrix.episode }}
+        run: |
+          python3 scripts/verify_episode.py \
+            "build_out/${EP_ID}/${EP_ID}.mp4" \
+            --meta "build_out/${EP_ID}/${EP_ID}_meta.json" \
+            --strict-production
+
+      - name: Upload Cinema Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cinema-${{ matrix.episode }}
+          path: build_out/${{ matrix.episode }}
+          retention-days: 14
+
+  publish:
+    name: Verify & Publish Release + PWA Manifest
+    needs: render
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install QA tools (FFmpeg & Pillow)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          pip install --upgrade Pillow
+
+      - name: Download all rendered cinema artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: cinema-*
+          path: dist_artifacts
+
+      - name: Re-verify every rendered MP4 before publishing
+        run: |
+          shopt -s globstar nullglob
+          count=0
+          for mp4 in dist_artifacts/**/ep-*.mp4; do
+            ep_dir=$(dirname "$mp4")
+            ep_name=$(basename "$mp4" .mp4)
+            meta="${ep_dir}/${ep_name}_meta.json"
+            echo "=== Re-verifying ${mp4} ==="
+            python3 scripts/verify_episode.py "${mp4}" --meta "${meta}" --strict-production
+            count=$((count + 1))
+          done
+          if [ "${count}" -eq 0 ]; then
+            echo "ERROR: No MP4 artifacts found to publish!"
+            exit 1
+          fi
+          echo "Verified ${count} episode master(s) successfully."
+
+      - name: Build / Merge videos-manifest.json
+        env:
+          RELEASE_TAG: ${{ inputs.release_tag || 'episodes-v1' }}
+          REPO_NAME: ${{ github.repository }}
+        run: |
+          python3 scripts/publish_manifest.py \
+            --input-dir dist_artifacts \
+            --output videos-manifest.json \
+            --release-tag "${RELEASE_TAG}" \
+            --repo "${REPO_NAME}" \
+            --merge-existing videos-manifest.json
+          cat videos-manifest.json
+
+      - name: Create or update GitHub Release and upload assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ inputs.release_tag || 'episodes-v1' }}
+          REPO_NAME: ${{ github.repository }}
+        run: |
+          cat > release_notes.md <<'EOF'
+          # AMINA : L'Autel De Yopougon — Saison 1 Complète (Cinéma Animé 9:16 HD)
+
+          Adaptation transmédia officielle du roman de **Karl DIGRÉ**, produite automatiquement en format vertical **9:16 Full HD** avec voix françaises multi-personnages, sous-titres dynamiques style TikTok/Reels et bande originale Afrogospel.
+
+          ## Épisodes de la Saison 1
+          1. **ep-001.mp4** — L'Ombre du Maquis — Le Pari et la Traque
+          2. **ep-002.mp4** — Le Piège Doré — L'Étal Saccagé et la Cage de Luxe
+          3. **ep-003.mp4** — Le Venin des Rumeurs — L'Évasion et la Calomnie Virale
+          4. **ep-004.mp4** — Le Guet-apens de la Rue Princesse — Le Rendez-vous Nocturne
+          5. **ep-005.mp4** — Le Sanctuaire de la Victoire — L'Autel de Prière Persistante
+          6. **ep-006.mp4** — Guerre dans l'Invisible — La Panique des Ténèbres
+          7. **ep-007.mp4** — La Contre-Attaque — Le Compte à Rebours de 48 Heures
+          8. **ep-008.mp4** — Les 72 Heures de Feu — Le Combat d'Usure Spirituel
+          9. **ep-009.mp4** — Le Piège de Minuit — La Tempête et la Garde à Vue
+          10. **ep-010.mp4** — Le Choc des Rois — La Chute du Prédateur
+          11. **ep-011.mp4** — L'Aube Nouvelle — Le Triomphe de l'Autel
+
+          ## Regarder & Partager
+          - **Application PWA AMINA Experience :** https://digrekarlito11-eng.github.io/gospel-microdrama-studio/
+          - **Publication TikTok / YouTube Shorts / Reels :** Téléchargez directement chaque fichier `ep-XXX.mp4` ci-dessous en 1 clic (sous-titres incrustés en zone de sécurité, audio masterisé `-16 LUFS`).
+          - **Commander le roman officiel :** WhatsApp `+225 07 00 88 95 14`
+          EOF
+
+          if ! gh release view "${RELEASE_TAG}" --repo "${REPO_NAME}" >/dev/null 2>&1; then
+            gh release create "${RELEASE_TAG}" \
+              --repo "${REPO_NAME}" \
+              --title "AMINA Saison 1 — Épisodes Cinéma HD 9:16 (${RELEASE_TAG})" \
+              --notes-file release_notes.md
+          else
+            gh release edit "${RELEASE_TAG}" \
+              --repo "${REPO_NAME}" \
+              --notes-file release_notes.md
+          fi
+
+          shopt -s globstar nullglob
+          ASSETS=(videos-manifest.json)
+          for f in dist_artifacts/**/ep-*.mp4 dist_artifacts/**/ep-*_poster.jpg dist_artifacts/**/ep-*_contact_sheet.jpg; do
+            ASSETS+=("$f")
+          done
+          echo "Uploading ${#ASSETS[@]} asset(s) to Release ${RELEASE_TAG}..."
+          gh release upload "${RELEASE_TAG}" "${ASSETS[@]}" --repo "${REPO_NAME}" --clobber
+          rm -f release_notes.md
+
+      - name: Commit updated videos-manifest.json to main
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add videos-manifest.json
+          if git diff --cached --quiet; then
+            echo "videos-manifest.json unchanged; skipping commit."
+          else
+            git commit -m "chore(cinema): publish videos-manifest.json for ${{ inputs.release_tag || 'episodes-v1' }} [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          fi
