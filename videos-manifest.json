@@ -1,0 +1,183 @@
+{
+  "releaseTag": "episodes-v1",
+  "releaseUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/tag/episodes-v1",
+  "generatedAt": "2026-11-20T22:47:18Z",
+  "episodes": {
+    "ep-001": {
+      "id": "ep-001",
+      "videoUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-001.mp4",
+      "downloadUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-001.mp4",
+      "posterUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-001_poster.jpg",
+      "duration": 80.71,
+      "sizeBytes": 20078695,
+      "resolution": "1080x1920",
+      "hasBurnedSubtitles": true,
+      "providers": {
+        "pollinations": 9,
+        "aihorde": 0,
+        "fallback": 0
+      },
+      "sha256": "6aabd732182d4ced921e99db1ca37abbe5733419996ae6e4a49587a4b5be5647"
+    },
+    "ep-002": {
+      "id": "ep-002",
+      "videoUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-002.mp4",
+      "downloadUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-002.mp4",
+      "posterUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-002_poster.jpg",
+      "duration": 78.62,
+      "sizeBytes": 21424133,
+      "resolution": "1080x1920",
+      "hasBurnedSubtitles": true,
+      "providers": {
+        "pollinations": 9,
+        "aihorde": 0,
+        "fallback": 0
+      },
+      "sha256": "e50d86b78af45e52d529c3cd247a7d5c241f674e05142cfee5570689cd459b08"
+    },
+    "ep-003": {
+      "id": "ep-003",
+      "videoUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-003.mp4",
+      "downloadUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-003.mp4",
+      "posterUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-003_poster.jpg",
+      "duration": 72.92,
+      "sizeBytes": 22782604,
+      "resolution": "1080x1920",
+      "hasBurnedSubtitles": true,
+      "providers": {
+        "pollinations": 9,
+        "aihorde": 0,
+        "fallback": 0
+      },
+      "sha256": "e465e42f22591ec09859e3f13f28f22bfd6051f3b3f8a76b2b754460606c5c86"
+    },
+    "ep-004": {
+      "id": "ep-004",
+      "videoUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-004.mp4",
+      "downloadUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-004.mp4",
+      "posterUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-004_poster.jpg",
+      "duration": 69.33,
+      "sizeBytes": 16991070,
+      "resolution": "1080x1920",
+      "hasBurnedSubtitles": true,
+      "providers": {
+        "pollinations": 9,
+        "aihorde": 0,
+        "fallback": 0
+      },
+      "sha256": "36862ccb7d72431ff04cddf02e68c59dbfa3d54bc085fc28afd159055cbac160"
+    },
+    "ep-005": {
+      "id": "ep-005",
+      "videoUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-005.mp4",
+      "downloadUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-005.mp4",
+      "posterUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-005_poster.jpg",
+      "duration": 77.92,
+      "sizeBytes": 20007270,
+      "resolution": "1080x1920",
+      "hasBurnedSubtitles": true,
+      "providers": {
+        "pollinations": 9,
+        "aihorde": 0,
+        "fallback": 0
+      },
+      "sha256": "bae9eacdf4f25e07609196f7b55690982160601525566bdfae5cd9864b1394e7"
+    },
+    "ep-006": {
+      "id": "ep-006",
+      "videoUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-006.mp4",
+      "downloadUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-006.mp4",
+      "posterUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-006_poster.jpg",
+      "duration": 62.21,
+      "sizeBytes": 17673918,
+      "resolution": "1080x1920",
+      "hasBurnedSubtitles": true,
+      "providers": {
+        "pollinations": 8,
+        "aihorde": 0,
+        "fallback": 0
+      },
+      "sha256": "42c3e92f56402f98ce4de1a82b48043c7a9050450e4d657a3eb4c9967d8a1813"
+    },
+    "ep-007": {
+      "id": "ep-007",
+      "videoUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-007.mp4",
+      "downloadUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-007.mp4",
+      "posterUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-007_poster.jpg",
+      "duration": 54.0,
+      "sizeBytes": 18906411,
+      "resolution": "1080x1920",
+      "hasBurnedSubtitles": true,
+      "providers": {
+        "pollinations": 8,
+        "aihorde": 0,
+        "fallback": 0
+      },
+      "sha256": "e22a9ddcee601d497fa593cf8384f4e98992caddce00526f34769f993f5d990f"
+    },
+    "ep-008": {
+      "id": "ep-008",
+      "videoUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-008.mp4",
+      "downloadUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-008.mp4",
+      "posterUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-008_poster.jpg",
+      "duration": 56.38,
+      "sizeBytes": 14450300,
+      "resolution": "1080x1920",
+      "hasBurnedSubtitles": true,
+      "providers": {
+        "pollinations": 8,
+        "aihorde": 0,
+        "fallback": 0
+      },
+      "sha256": "7b2050e833d9e36f47bcbd355508cede06aeca1e78c2a327360e655ec41cefd6"
+    },
+    "ep-009": {
+      "id": "ep-009",
+      "videoUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-009.mp4",
+      "downloadUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-009.mp4",
+      "posterUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-009_poster.jpg",
+      "duration": 59.92,
+      "sizeBytes": 15884829,
+      "resolution": "1080x1920",
+      "hasBurnedSubtitles": true,
+      "providers": {
+        "pollinations": 8,
+        "aihorde": 0,
+        "fallback": 0
+      },
+      "sha256": "ddd6b0f73b67d2c65ef71d2cba92101e91f541f41b9d940a002ea6891c01926e"
+    },
+    "ep-010": {
+      "id": "ep-010",
+      "videoUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-010.mp4",
+      "downloadUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-010.mp4",
+      "posterUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-010_poster.jpg",
+      "duration": 59.21,
+      "sizeBytes": 15489827,
+      "resolution": "1080x1920",
+      "hasBurnedSubtitles": true,
+      "providers": {
+        "pollinations": 8,
+        "aihorde": 0,
+        "fallback": 0
+      },
+      "sha256": "057ab17800ada1fe31f42840aea0358531e10faa03b9cf667b79d27a4239bb30"
+    },
+    "ep-011": {
+      "id": "ep-011",
+      "videoUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-011.mp4",
+      "downloadUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-011.mp4",
+      "posterUrl": "https://github.com/digrekarlito11-eng/gospel-microdrama-studio/releases/download/episodes-v1/ep-011_poster.jpg",
+      "duration": 62.58,
+      "sizeBytes": 20906179,
+      "resolution": "1080x1920",
+      "hasBurnedSubtitles": true,
+      "providers": {
+        "pollinations": 8,
+        "aihorde": 0,
+        "fallback": 0
+      },
+      "sha256": "2235c4f99232795ff715f32fb3eadf70ceb8e0dbf8be635a09d88b3f99adb5e7"
+    }
+  }
+}
